@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D19D1FB4259D35410093A404 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FB3259D35410093A404 /* AppDelegate.swift */; };
+		D19D1FB6259D35410093A404 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FB5259D35410093A404 /* SceneDelegate.swift */; };
+		D19D1FB8259D35410093A404 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FB7259D35410093A404 /* ViewController.swift */; };
+		D19D1FBB259D35410093A404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19D1FB9259D35410093A404 /* Main.storyboard */; };
+		D19D1FBD259D35430093A404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D19D1FBC259D35430093A404 /* Assets.xcassets */; };
+		D19D1FC0259D35430093A404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19D1FBE259D35430093A404 /* LaunchScreen.storyboard */; };
+		D19D1FCB259D35430093A404 /* ShabdakridaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FCA259D35430093A404 /* ShabdakridaTests.swift */; };
+		D19D1FD6259D35430093A404 /* ShabdakridaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FD5259D35430093A404 /* ShabdakridaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D19D1FC7259D35430093A404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D19D1FA8259D35410093A404 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D19D1FAF259D35410093A404;
+			remoteInfo = Shabdakrida;
+		};
+		D19D1FD2259D35430093A404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D19D1FA8259D35410093A404 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D19D1FAF259D35410093A404;
+			remoteInfo = Shabdakrida;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D19D1FB0259D35410093A404 /* Shabdakrida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shabdakrida.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19D1FB3259D35410093A404 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D19D1FB5259D35410093A404 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D19D1FB7259D35410093A404 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D19D1FBA259D35410093A404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D19D1FBC259D35430093A404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D19D1FBF259D35430093A404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D19D1FC1259D35430093A404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D19D1FC6259D35430093A404 /* ShabdakridaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShabdakridaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19D1FCA259D35430093A404 /* ShabdakridaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShabdakridaTests.swift; sourceTree = "<group>"; };
+		D19D1FCC259D35430093A404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D19D1FD1259D35430093A404 /* ShabdakridaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShabdakridaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19D1FD5259D35430093A404 /* ShabdakridaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShabdakridaUITests.swift; sourceTree = "<group>"; };
+		D19D1FD7259D35430093A404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D19D1FAD259D35410093A404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19D1FC3259D35430093A404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19D1FCE259D35430093A404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D19D1FA7259D35410093A404 = {
+			isa = PBXGroup;
+			children = (
+				D19D1FB2259D35410093A404 /* Shabdakrida */,
+				D19D1FC9259D35430093A404 /* ShabdakridaTests */,
+				D19D1FD4259D35430093A404 /* ShabdakridaUITests */,
+				D19D1FB1259D35410093A404 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D19D1FB1259D35410093A404 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D19D1FB0259D35410093A404 /* Shabdakrida.app */,
+				D19D1FC6259D35430093A404 /* ShabdakridaTests.xctest */,
+				D19D1FD1259D35430093A404 /* ShabdakridaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D19D1FB2259D35410093A404 /* Shabdakrida */ = {
+			isa = PBXGroup;
+			children = (
+				D19D1FB3259D35410093A404 /* AppDelegate.swift */,
+				D19D1FB5259D35410093A404 /* SceneDelegate.swift */,
+				D19D1FB7259D35410093A404 /* ViewController.swift */,
+				D19D1FB9259D35410093A404 /* Main.storyboard */,
+				D19D1FBC259D35430093A404 /* Assets.xcassets */,
+				D19D1FBE259D35430093A404 /* LaunchScreen.storyboard */,
+				D19D1FC1259D35430093A404 /* Info.plist */,
+			);
+			path = Shabdakrida;
+			sourceTree = "<group>";
+		};
+		D19D1FC9259D35430093A404 /* ShabdakridaTests */ = {
+			isa = PBXGroup;
+			children = (
+				D19D1FCA259D35430093A404 /* ShabdakridaTests.swift */,
+				D19D1FCC259D35430093A404 /* Info.plist */,
+			);
+			path = ShabdakridaTests;
+			sourceTree = "<group>";
+		};
+		D19D1FD4259D35430093A404 /* ShabdakridaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D19D1FD5259D35430093A404 /* ShabdakridaUITests.swift */,
+				D19D1FD7259D35430093A404 /* Info.plist */,
+			);
+			path = ShabdakridaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D19D1FAF259D35410093A404 /* Shabdakrida */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19D1FDA259D35430093A404 /* Build configuration list for PBXNativeTarget "Shabdakrida" */;
+			buildPhases = (
+				D19D1FAC259D35410093A404 /* Sources */,
+				D19D1FAD259D35410093A404 /* Frameworks */,
+				D19D1FAE259D35410093A404 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shabdakrida;
+			productName = Shabdakrida;
+			productReference = D19D1FB0259D35410093A404 /* Shabdakrida.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D19D1FC5259D35430093A404 /* ShabdakridaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19D1FDD259D35430093A404 /* Build configuration list for PBXNativeTarget "ShabdakridaTests" */;
+			buildPhases = (
+				D19D1FC2259D35430093A404 /* Sources */,
+				D19D1FC3259D35430093A404 /* Frameworks */,
+				D19D1FC4259D35430093A404 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D19D1FC8259D35430093A404 /* PBXTargetDependency */,
+			);
+			name = ShabdakridaTests;
+			productName = ShabdakridaTests;
+			productReference = D19D1FC6259D35430093A404 /* ShabdakridaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D19D1FD0259D35430093A404 /* ShabdakridaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19D1FE0259D35430093A404 /* Build configuration list for PBXNativeTarget "ShabdakridaUITests" */;
+			buildPhases = (
+				D19D1FCD259D35430093A404 /* Sources */,
+				D19D1FCE259D35430093A404 /* Frameworks */,
+				D19D1FCF259D35430093A404 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D19D1FD3259D35430093A404 /* PBXTargetDependency */,
+			);
+			name = ShabdakridaUITests;
+			productName = ShabdakridaUITests;
+			productReference = D19D1FD1259D35430093A404 /* ShabdakridaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D19D1FA8259D35410093A404 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					D19D1FAF259D35410093A404 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					D19D1FC5259D35430093A404 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = D19D1FAF259D35410093A404;
+					};
+					D19D1FD0259D35430093A404 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = D19D1FAF259D35410093A404;
+					};
+				};
+			};
+			buildConfigurationList = D19D1FAB259D35410093A404 /* Build configuration list for PBXProject "Shabdakrida" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D19D1FA7259D35410093A404;
+			productRefGroup = D19D1FB1259D35410093A404 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D19D1FAF259D35410093A404 /* Shabdakrida */,
+				D19D1FC5259D35430093A404 /* ShabdakridaTests */,
+				D19D1FD0259D35430093A404 /* ShabdakridaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D19D1FAE259D35410093A404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19D1FC0259D35430093A404 /* LaunchScreen.storyboard in Resources */,
+				D19D1FBD259D35430093A404 /* Assets.xcassets in Resources */,
+				D19D1FBB259D35410093A404 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19D1FC4259D35430093A404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19D1FCF259D35430093A404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D19D1FAC259D35410093A404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19D1FB8259D35410093A404 /* ViewController.swift in Sources */,
+				D19D1FB4259D35410093A404 /* AppDelegate.swift in Sources */,
+				D19D1FB6259D35410093A404 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19D1FC2259D35430093A404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19D1FCB259D35430093A404 /* ShabdakridaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19D1FCD259D35430093A404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19D1FD6259D35430093A404 /* ShabdakridaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D19D1FC8259D35430093A404 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D19D1FAF259D35410093A404 /* Shabdakrida */;
+			targetProxy = D19D1FC7259D35430093A404 /* PBXContainerItemProxy */;
+		};
+		D19D1FD3259D35430093A404 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D19D1FAF259D35410093A404 /* Shabdakrida */;
+			targetProxy = D19D1FD2259D35430093A404 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D19D1FB9259D35410093A404 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D19D1FBA259D35410093A404 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D19D1FBE259D35430093A404 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D19D1FBF259D35430093A404 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D19D1FD8259D35430093A404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D19D1FD9259D35430093A404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D19D1FDB259D35430093A404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Shabdakrida/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poojachow.Shabdakrida;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D19D1FDC259D35430093A404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Shabdakrida/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poojachow.Shabdakrida;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D19D1FDE259D35430093A404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShabdakridaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poojachow.ShabdakridaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shabdakrida.app/Shabdakrida";
+			};
+			name = Debug;
+		};
+		D19D1FDF259D35430093A404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShabdakridaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poojachow.ShabdakridaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shabdakrida.app/Shabdakrida";
+			};
+			name = Release;
+		};
+		D19D1FE1259D35430093A404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShabdakridaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poojachow.ShabdakridaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shabdakrida;
+			};
+			name = Debug;
+		};
+		D19D1FE2259D35430093A404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShabdakridaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poojachow.ShabdakridaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shabdakrida;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D19D1FAB259D35410093A404 /* Build configuration list for PBXProject "Shabdakrida" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19D1FD8259D35430093A404 /* Debug */,
+				D19D1FD9259D35430093A404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D19D1FDA259D35430093A404 /* Build configuration list for PBXNativeTarget "Shabdakrida" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19D1FDB259D35430093A404 /* Debug */,
+				D19D1FDC259D35430093A404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D19D1FDD259D35430093A404 /* Build configuration list for PBXNativeTarget "ShabdakridaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19D1FDE259D35430093A404 /* Debug */,
+				D19D1FDF259D35430093A404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D19D1FE0259D35430093A404 /* Build configuration list for PBXNativeTarget "ShabdakridaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19D1FE1259D35430093A404 /* Debug */,
+				D19D1FE2259D35430093A404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D19D1FA8259D35410093A404 /* Project object */;
+}
