@@ -27,7 +27,7 @@ class Level1ViewController: UIViewController {
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         tableView.tableFooterView = UIView()
 //        tableView.separatorStyle = .none
-        tableView.register(OptionTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()
@@ -50,7 +50,7 @@ extension Level1ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! OptionTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         cell.textLabel?.text = characters[indexPath.row]
         cell.textLabel?.font = UIFont(name: "DevanagariSangamMN", size: 20)
         cell.textLabel?.textAlignment = .center
