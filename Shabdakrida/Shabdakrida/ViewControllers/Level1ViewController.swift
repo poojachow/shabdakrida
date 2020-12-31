@@ -44,9 +44,15 @@ extension Level1ViewController: UITableViewDataSource, UITableViewDelegate {
         return characters.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 72
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! OptionTableViewCell
         cell.textLabel?.text = characters[indexPath.row]
+        cell.textLabel?.font = UIFont(name: "DevanagariSangamMN", size: 20)
+        cell.textLabel?.textAlignment = .center
         return cell
     }
 }
