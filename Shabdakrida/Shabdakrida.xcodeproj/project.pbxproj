@@ -22,6 +22,7 @@
 		D19D1FCB259D35430093A404 /* ShabdakridaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FCA259D35430093A404 /* ShabdakridaTests.swift */; };
 		D19D1FD6259D35430093A404 /* ShabdakridaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FD5259D35430093A404 /* ShabdakridaUITests.swift */; };
 		D19D1FE9259D3D9C0093A404 /* Level1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FE8259D3D9C0093A404 /* Level1ViewController.swift */; };
+		D1D7E154259E5FBB00F181FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1D7E153259E5FBB00F181FA /* GoogleService-Info.plist */; };
 		D1FD9EB7259D90E600E06103 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD9EB6259D90E600E06103 /* Modal.swift */; };
 		D1FD9EBD259D91AE00E06103 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD9EBC259D91AE00E06103 /* CustomAlertView.swift */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		D19D1FD5259D35430093A404 /* ShabdakridaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShabdakridaUITests.swift; sourceTree = "<group>"; };
 		D19D1FD7259D35430093A404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D19D1FE8259D3D9C0093A404 /* Level1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level1ViewController.swift; sourceTree = "<group>"; };
+		D1D7E153259E5FBB00F181FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D1FD9EB6259D90E600E06103 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 		D1FD9EBC259D91AE00E06103 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +155,7 @@
 		D19D1FA7259D35410093A404 = {
 			isa = PBXGroup;
 			children = (
+				D1D7E153259E5FBB00F181FA /* GoogleService-Info.plist */,
 				D19D1FB2259D35410093A404 /* Shabdakrida */,
 				D19D1FC9259D35430093A404 /* ShabdakridaTests */,
 				D19D1FD4259D35430093A404 /* ShabdakridaUITests */,
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19D1FC0259D35430093A404 /* LaunchScreen.storyboard in Resources */,
+				D1D7E154259E5FBB00F181FA /* GoogleService-Info.plist in Resources */,
 				D19D1FBD259D35430093A404 /* Assets.xcassets in Resources */,
 				D19D1FBB259D35410093A404 /* Main.storyboard in Resources */,
 			);
@@ -655,7 +659,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.poojachow.Shabdakrida;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poojachow.shabdakrida;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -674,7 +678,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.poojachow.Shabdakrida;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poojachow.shabdakrida;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
