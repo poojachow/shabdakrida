@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D10B3871259D4BB600465BA6 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10B3870259D4BB600465BA6 /* ViewExtensions.swift */; };
 		D11A6CA8259D7F1100B16A9D /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11A6CA7259D7F1100B16A9D /* QuestionModel.swift */; };
+		D11A6CAE259D820300B16A9D /* RiddleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11A6CAD259D820300B16A9D /* RiddleRepository.swift */; };
 		D19D1FB4259D35410093A404 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FB3259D35410093A404 /* AppDelegate.swift */; };
 		D19D1FB6259D35410093A404 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FB5259D35410093A404 /* SceneDelegate.swift */; };
 		D19D1FB8259D35410093A404 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FB7259D35410093A404 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		D10B3870259D4BB600465BA6 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		D11A6CA7259D7F1100B16A9D /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		D11A6CAD259D820300B16A9D /* RiddleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleRepository.swift; sourceTree = "<group>"; };
 		D19D1FB0259D35410093A404 /* Shabdakrida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shabdakrida.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19D1FB3259D35410093A404 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D19D1FB5259D35410093A404 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,9 +100,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D11A6CAC259D81E200B16A9D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D11A6CAD259D820300B16A9D /* RiddleRepository.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		D19D1FA7259D35410093A404 = {
 			isa = PBXGroup;
 			children = (
+				D11A6CAC259D81E200B16A9D /* Service */,
 				D19D1FB2259D35410093A404 /* Shabdakrida */,
 				D19D1FC9259D35430093A404 /* ShabdakridaTests */,
 				D19D1FD4259D35430093A404 /* ShabdakridaUITests */,
@@ -295,6 +306,7 @@
 				D19D1FE9259D3D9C0093A404 /* Level1ViewController.swift in Sources */,
 				D19D1FB4259D35410093A404 /* AppDelegate.swift in Sources */,
 				D11A6CA8259D7F1100B16A9D /* QuestionModel.swift in Sources */,
+				D11A6CAE259D820300B16A9D /* RiddleRepository.swift in Sources */,
 				D10B3871259D4BB600465BA6 /* ViewExtensions.swift in Sources */,
 				D19D1FB6259D35410093A404 /* SceneDelegate.swift in Sources */,
 			);
