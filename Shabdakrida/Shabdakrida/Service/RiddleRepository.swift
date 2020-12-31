@@ -27,7 +27,23 @@ class RiddleRepository {
     
     func getQuestion(isNext: Bool) -> QuestionModel? {
         ref.child("level1").observeSingleEvent(of: .value) { (snapshot) in
-            print("YAY!")
+            if let data = snapshot.value as? [String: Any] {
+                print("######")
+                print(data["level"])
+                print(data["questions"])
+                if let questions = data["questions"] as? [Any] {
+                    for question in questions {
+                        print("######")
+                        if let question = question as? [String: Any] {
+                            print(question["answer"])
+                            print(question["image"])
+                            print(question["options"])
+                        }
+                    }
+                }
+            }
+        } withCancel: { (error) in
+            print("ERROR: No permission - \(error)")
         }
         
         if isNext {
