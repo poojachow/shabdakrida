@@ -78,4 +78,13 @@ extension Level1ViewController: UITableViewDataSource, UITableViewDelegate {
         return 250
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let option = question?.options[indexPath.row] {
+            if option == question?.answer {
+                let cell = tableView.cellForRow(at: indexPath)
+                cell?.backgroundColor = .green
+            }
+        }
+    }
+    
 }
