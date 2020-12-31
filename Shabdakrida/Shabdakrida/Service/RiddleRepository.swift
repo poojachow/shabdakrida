@@ -16,7 +16,7 @@ class RiddleRepository {
     
     init() {
         let q1 = QuestionModel(imageUrl: "https://i.pinimg.com/originals/e1/dc/57/e1dc574a122ee009c1bb8571a4981c8b.png", options: ["मल्लक", "केशाः", "लोचन", "नखर"], answer: "लोचन")
-        let q2 = QuestionModel(imageUrl: "https://library.kissclipart.com/20190224/wwq/kissclipart-dog-clipart-puppy-maltese-dog-beagle-3400a99cc8df2422.png", options: ["श्वान", "बिडाला", "मूषक", "पीवन्"], answer: "श्वान")
+        let q2 = QuestionModel(imageUrl: "https://www.dogsinpictures.com/images/brown_white_clipart_dog_with_red_collar.jpg", options: ["श्वान", "बिडाला", "मूषक", "पीवन्"], answer: "श्वान")
         
         questionsList = [q1, q2]
         currentQuestionIndex = 0

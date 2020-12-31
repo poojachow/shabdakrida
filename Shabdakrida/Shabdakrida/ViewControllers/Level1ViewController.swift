@@ -33,6 +33,11 @@ class Level1ViewController: UIViewController {
         tableView.delegate = self
         tableView.reloadData()
     }
+    
+    @objc func nextQuestion() {
+        question = repository.getQuestion(isNext: true)
+        tableView.reloadData()
+    }
 
 }
 
@@ -52,6 +57,7 @@ extension Level1ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        cell.backgroundColor = .white
         cell.textLabel?.text = question?.options[indexPath.row]
         cell.textLabel?.font = UIFont(name: "DevanagariSangamMN", size: 20)
         cell.textLabel?.textAlignment = .center
@@ -60,6 +66,8 @@ extension Level1ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let imageView = UIImageView()
+        imageView.backgroundColor = .white
+        imageView.contentMode = .scaleAspectFit
         if let urlString = question?.imageUrl, let url = URL(string: urlString) {
             imageView.sd_setImage(with: url)
         }
@@ -85,6 +93,7 @@ extension Level1ViewController: UITableViewDataSource, UITableViewDelegate {
                 cell?.backgroundColor = .green
             }
         }
+        perform(#selector(nextQuestion), with: nil, afterDelay: 2)
     }
     
 }
