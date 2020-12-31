@@ -1,0 +1,6 @@
+framework module Pods_ShabdakridaTests {
+  umbrella header "Pods-ShabdakridaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

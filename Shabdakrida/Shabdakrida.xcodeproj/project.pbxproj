@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B19FAC678EBFDD23341FA39 /* Pods_Shabdakrida_ShabdakridaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B5F56B2E1EEC21E1CBA9443 /* Pods_Shabdakrida_ShabdakridaUITests.framework */; };
+		7D48ABC6E150A901A5DC530A /* Pods_ShabdakridaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F393F7AE3008984463B372C /* Pods_ShabdakridaTests.framework */; };
+		C5F6CF6B8EC1D039D3E2891F /* Pods_Shabdakrida.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39905566A7D4CC57664537A7 /* Pods_Shabdakrida.framework */; };
 		D10B3871259D4BB600465BA6 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10B3870259D4BB600465BA6 /* ViewExtensions.swift */; };
 		D11A6CA8259D7F1100B16A9D /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11A6CA7259D7F1100B16A9D /* QuestionModel.swift */; };
 		D11A6CAE259D820300B16A9D /* RiddleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11A6CAD259D820300B16A9D /* RiddleRepository.swift */; };
@@ -39,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14CA755FD3AEEF4E30E02C79 /* Pods-Shabdakrida.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shabdakrida.debug.xcconfig"; path = "Target Support Files/Pods-Shabdakrida/Pods-Shabdakrida.debug.xcconfig"; sourceTree = "<group>"; };
+		281A5D62CBCABBBD0B3958E7 /* Pods-Shabdakrida-ShabdakridaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shabdakrida-ShabdakridaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Shabdakrida-ShabdakridaUITests/Pods-Shabdakrida-ShabdakridaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F393F7AE3008984463B372C /* Pods_ShabdakridaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShabdakridaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E7BA88A357013DA9F92691 /* Pods-ShabdakridaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShabdakridaTests.debug.xcconfig"; path = "Target Support Files/Pods-ShabdakridaTests/Pods-ShabdakridaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		39905566A7D4CC57664537A7 /* Pods_Shabdakrida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shabdakrida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A7E8A0B6E7070BE9DEE6F9C /* Pods-ShabdakridaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShabdakridaTests.release.xcconfig"; path = "Target Support Files/Pods-ShabdakridaTests/Pods-ShabdakridaTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B516A6427D18D89FD962ABC /* Pods-Shabdakrida.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shabdakrida.release.xcconfig"; path = "Target Support Files/Pods-Shabdakrida/Pods-Shabdakrida.release.xcconfig"; sourceTree = "<group>"; };
+		9B5F56B2E1EEC21E1CBA9443 /* Pods_Shabdakrida_ShabdakridaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shabdakrida_ShabdakridaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8EDAC5C06FD1F11B480D62 /* Pods-Shabdakrida-ShabdakridaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shabdakrida-ShabdakridaUITests.release.xcconfig"; path = "Target Support Files/Pods-Shabdakrida-ShabdakridaUITests/Pods-Shabdakrida-ShabdakridaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D10B3870259D4BB600465BA6 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		D11A6CA7259D7F1100B16A9D /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		D11A6CAD259D820300B16A9D /* RiddleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleRepository.swift; sourceTree = "<group>"; };
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5F6CF6B8EC1D039D3E2891F /* Pods_Shabdakrida.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D48ABC6E150A901A5DC530A /* Pods_ShabdakridaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +92,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B19FAC678EBFDD23341FA39 /* Pods_Shabdakrida_ShabdakridaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		022B95E5A303A77568AE0A30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39905566A7D4CC57664537A7 /* Pods_Shabdakrida.framework */,
+				9B5F56B2E1EEC21E1CBA9443 /* Pods_Shabdakrida_ShabdakridaUITests.framework */,
+				2F393F7AE3008984463B372C /* Pods_ShabdakridaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75F64C9C62425682B5657BE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14CA755FD3AEEF4E30E02C79 /* Pods-Shabdakrida.debug.xcconfig */,
+				9B516A6427D18D89FD962ABC /* Pods-Shabdakrida.release.xcconfig */,
+				281A5D62CBCABBBD0B3958E7 /* Pods-Shabdakrida-ShabdakridaUITests.debug.xcconfig */,
+				CA8EDAC5C06FD1F11B480D62 /* Pods-Shabdakrida-ShabdakridaUITests.release.xcconfig */,
+				35E7BA88A357013DA9F92691 /* Pods-ShabdakridaTests.debug.xcconfig */,
+				7A7E8A0B6E7070BE9DEE6F9C /* Pods-ShabdakridaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D10B386F259D4B7500465BA6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +155,8 @@
 				D19D1FC9259D35430093A404 /* ShabdakridaTests */,
 				D19D1FD4259D35430093A404 /* ShabdakridaUITests */,
 				D19D1FB1259D35410093A404 /* Products */,
+				75F64C9C62425682B5657BE2 /* Pods */,
+				022B95E5A303A77568AE0A30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D19D1FDA259D35430093A404 /* Build configuration list for PBXNativeTarget "Shabdakrida" */;
 			buildPhases = (
+				E4BB473D35B81C4A4B8E8144 /* [CP] Check Pods Manifest.lock */,
 				D19D1FAC259D35410093A404 /* Sources */,
 				D19D1FAD259D35410093A404 /* Frameworks */,
 				D19D1FAE259D35410093A404 /* Resources */,
+				CE3F7459A4683604DB6008EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D19D1FDD259D35430093A404 /* Build configuration list for PBXNativeTarget "ShabdakridaTests" */;
 			buildPhases = (
+				1A0D23E09BEC39F445020C5B /* [CP] Check Pods Manifest.lock */,
 				D19D1FC2259D35430093A404 /* Sources */,
 				D19D1FC3259D35430093A404 /* Frameworks */,
 				D19D1FC4259D35430093A404 /* Resources */,
@@ -214,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D19D1FE0259D35430093A404 /* Build configuration list for PBXNativeTarget "ShabdakridaUITests" */;
 			buildPhases = (
+				59D0F558EBBC1D166F89B014 /* [CP] Check Pods Manifest.lock */,
 				D19D1FCD259D35430093A404 /* Sources */,
 				D19D1FCE259D35430093A404 /* Frameworks */,
 				D19D1FCF259D35430093A404 /* Resources */,
+				F9CB2E9F86DB13A4ED5A6AEE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,6 +342,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A0D23E09BEC39F445020C5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShabdakridaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59D0F558EBBC1D166F89B014 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shabdakrida-ShabdakridaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE3F7459A4683604DB6008EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shabdakrida/Pods-Shabdakrida-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shabdakrida/Pods-Shabdakrida-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shabdakrida/Pods-Shabdakrida-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4BB473D35B81C4A4B8E8144 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shabdakrida-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9CB2E9F86DB13A4ED5A6AEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shabdakrida-ShabdakridaUITests/Pods-Shabdakrida-ShabdakridaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shabdakrida-ShabdakridaUITests/Pods-Shabdakrida-ShabdakridaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shabdakrida-ShabdakridaUITests/Pods-Shabdakrida-ShabdakridaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D19D1FAC259D35410093A404 /* Sources */ = {
@@ -481,6 +630,7 @@
 		};
 		D19D1FDB259D35430093A404 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14CA755FD3AEEF4E30E02C79 /* Pods-Shabdakrida.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -499,6 +649,7 @@
 		};
 		D19D1FDC259D35430093A404 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B516A6427D18D89FD962ABC /* Pods-Shabdakrida.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -517,6 +668,7 @@
 		};
 		D19D1FDE259D35430093A404 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35E7BA88A357013DA9F92691 /* Pods-ShabdakridaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -538,6 +690,7 @@
 		};
 		D19D1FDF259D35430093A404 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A7E8A0B6E7070BE9DEE6F9C /* Pods-ShabdakridaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,6 +712,7 @@
 		};
 		D19D1FE1259D35430093A404 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 281A5D62CBCABBBD0B3958E7 /* Pods-Shabdakrida-ShabdakridaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -578,6 +732,7 @@
 		};
 		D19D1FE2259D35430093A404 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA8EDAC5C06FD1F11B480D62 /* Pods-Shabdakrida-ShabdakridaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
