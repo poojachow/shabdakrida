@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D10B386B259D4B4F00465BA6 /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10B386A259D4B4F00465BA6 /* OptionTableViewCell.swift */; };
 		D10B3871259D4BB600465BA6 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10B3870259D4BB600465BA6 /* ViewExtensions.swift */; };
 		D19D1FB4259D35410093A404 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FB3259D35410093A404 /* AppDelegate.swift */; };
 		D19D1FB6259D35410093A404 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FB5259D35410093A404 /* SceneDelegate.swift */; };
@@ -38,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D10B386A259D4B4F00465BA6 /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
 		D10B3870259D4BB600465BA6 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		D19D1FB0259D35410093A404 /* Shabdakrida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shabdakrida.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19D1FB3259D35410093A404 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,14 +80,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D10B3869259D4B3200465BA6 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				D10B386A259D4B4F00465BA6 /* OptionTableViewCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		D10B386F259D4B7500465BA6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				D10B386F259D4B7500465BA6 /* Extensions */,
-				D10B3869259D4B3200465BA6 /* Views */,
 				D19D1FE7259D3D660093A404 /* ViewControllers */,
 				D19D1FB3259D35410093A404 /* AppDelegate.swift */,
 				D19D1FB5259D35410093A404 /* SceneDelegate.swift */,
@@ -294,7 +283,6 @@
 				D19D1FB8259D35410093A404 /* ViewController.swift in Sources */,
 				D19D1FE9259D3D9C0093A404 /* Level1ViewController.swift in Sources */,
 				D19D1FB4259D35410093A404 /* AppDelegate.swift in Sources */,
-				D10B386B259D4B4F00465BA6 /* OptionTableViewCell.swift in Sources */,
 				D10B3871259D4BB600465BA6 /* ViewExtensions.swift in Sources */,
 				D19D1FB6259D35410093A404 /* SceneDelegate.swift in Sources */,
 			);
