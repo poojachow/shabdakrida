@@ -26,7 +26,7 @@ class Level1ViewController: UIViewController {
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         tableView.tableFooterView = UIView()
-        tableView.separatorStyle = .none
+//        tableView.separatorStyle = .none
         tableView.register(OptionTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         tableView.dataSource = self
         tableView.delegate = self
@@ -38,11 +38,11 @@ class Level1ViewController: UIViewController {
 extension Level1ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return characters.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return characters.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -51,9 +51,28 @@ extension Level1ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! OptionTableViewCell
-        cell.textLabel?.text = characters[indexPath.section]
+        cell.textLabel?.text = characters[indexPath.row]
         cell.textLabel?.font = UIFont(name: "DevanagariSangamMN", size: 20)
         cell.textLabel?.textAlignment = .center
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let imageView = UIImageView()
+        imageView.backgroundColor = .red
+        let header = UITableViewHeaderFooterView()
+        header.addSubview(imageView)
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.topAnchor.constraint(equalTo: header.topAnchor).isActive = true
+        imageView.leftAnchor.constraint(equalTo: header.leftAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: header.bottomAnchor).isActive = true
+        imageView.rightAnchor.constraint(equalTo: header.rightAnchor).isActive = true
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 250
+    }
+    
 }
