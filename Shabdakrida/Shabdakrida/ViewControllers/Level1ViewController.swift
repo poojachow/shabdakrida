@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class Level1ViewController: UIViewController {
     
@@ -59,7 +60,9 @@ extension Level1ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let imageView = UIImageView()
-        imageView.backgroundColor = .red
+        if let urlString = question?.imageUrl, let url = URL(string: urlString) {
+            imageView.sd_setImage(with: url)
+        }
         let header = UITableViewHeaderFooterView()
         header.addSubview(imageView)
         
