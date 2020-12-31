@@ -23,6 +23,7 @@
 		D19D1FD6259D35430093A404 /* ShabdakridaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FD5259D35430093A404 /* ShabdakridaUITests.swift */; };
 		D19D1FE9259D3D9C0093A404 /* Level1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FE8259D3D9C0093A404 /* Level1ViewController.swift */; };
 		D1FD9EB7259D90E600E06103 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD9EB6259D90E600E06103 /* Modal.swift */; };
+		D1FD9EBD259D91AE00E06103 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD9EBC259D91AE00E06103 /* CustomAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		D19D1FD7259D35430093A404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D19D1FE8259D3D9C0093A404 /* Level1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level1ViewController.swift; sourceTree = "<group>"; };
 		D1FD9EB6259D90E600E06103 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
+		D1FD9EBC259D91AE00E06103 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		D19D1FB2259D35410093A404 /* Shabdakrida */ = {
 			isa = PBXGroup;
 			children = (
+				D1FD9EBB259D919700E06103 /* Views */,
 				D11A6CAC259D81E200B16A9D /* Service */,
 				D11A6CA6259D751B00B16A9D /* Models */,
 				D10B386F259D4B7500465BA6 /* Extensions */,
@@ -213,6 +216,14 @@
 				D1FD9EB6259D90E600E06103 /* Modal.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D1FD9EBB259D919700E06103 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1FD9EBC259D91AE00E06103 /* CustomAlertView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,6 +467,7 @@
 				D19D1FB8259D35410093A404 /* ViewController.swift in Sources */,
 				D19D1FE9259D3D9C0093A404 /* Level1ViewController.swift in Sources */,
 				D19D1FB4259D35410093A404 /* AppDelegate.swift in Sources */,
+				D1FD9EBD259D91AE00E06103 /* CustomAlertView.swift in Sources */,
 				D1FD9EB7259D90E600E06103 /* Modal.swift in Sources */,
 				D11A6CA8259D7F1100B16A9D /* QuestionModel.swift in Sources */,
 				D11A6CAE259D820300B16A9D /* RiddleRepository.swift in Sources */,
