@@ -22,6 +22,26 @@ class RiddleRepository {
         currentQuestionIndex = 0
     }
     
+    func getQuestion(isNext: Bool) -> QuestionModel? {
+        if isNext {
+            // Check if next is within range
+            let nextIndex = currentQuestionIndex + 1
+            if nextIndex >= 0 && nextIndex < questionsList.count {
+                currentQuestionIndex = nextIndex
+            }
+            else {
+                print("Next question is not in list")
+                return nil
+            }
+        }
+        return getQuestionFor(index: currentQuestionIndex)
+    }
     
+    private func getQuestionFor(index: Int) -> QuestionModel? {
+        if index >= 0 && index < questionsList.count {
+            return questionsList[index]
+        }
+        return nil
+    }
     
 }

@@ -10,8 +10,8 @@ import UIKit
 class Level1ViewController: UIViewController {
     
     let tableView = UITableView(frame: .zero, style: .grouped)
-    var characters = ["Link", "Zelda", "Ganondorf", "Midna"]
     let cellIdentifier = "optionCell"
+    var question: QuestionModel?
     
     override func loadView() {
         super.loadView()
@@ -42,7 +42,7 @@ extension Level1ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return characters.count
+        return question?.options.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -51,7 +51,7 @@ extension Level1ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = characters[indexPath.row]
+        cell.textLabel?.text = question?.options[indexPath.row]
         cell.textLabel?.font = UIFont(name: "DevanagariSangamMN", size: 20)
         cell.textLabel?.textAlignment = .center
         return cell
