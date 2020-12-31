@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -119,7 +119,6 @@
 				35E7BA88A357013DA9F92691 /* Pods-ShabdakridaTests.debug.xcconfig */,
 				7A7E8A0B6E7070BE9DEE6F9C /* Pods-ShabdakridaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,7 +149,6 @@
 		D19D1FA7259D35410093A404 = {
 			isa = PBXGroup;
 			children = (
-				D11A6CAC259D81E200B16A9D /* Service */,
 				D19D1FB2259D35410093A404 /* Shabdakrida */,
 				D19D1FC9259D35430093A404 /* ShabdakridaTests */,
 				D19D1FD4259D35430093A404 /* ShabdakridaUITests */,
@@ -173,6 +171,7 @@
 		D19D1FB2259D35410093A404 /* Shabdakrida */ = {
 			isa = PBXGroup;
 			children = (
+				D11A6CAC259D81E200B16A9D /* Service */,
 				D11A6CA6259D751B00B16A9D /* Models */,
 				D10B386F259D4B7500465BA6 /* Extensions */,
 				D19D1FE7259D3D660093A404 /* ViewControllers */,
