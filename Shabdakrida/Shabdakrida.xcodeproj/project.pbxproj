@@ -22,6 +22,7 @@
 		D19D1FCB259D35430093A404 /* ShabdakridaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FCA259D35430093A404 /* ShabdakridaTests.swift */; };
 		D19D1FD6259D35430093A404 /* ShabdakridaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FD5259D35430093A404 /* ShabdakridaUITests.swift */; };
 		D19D1FE9259D3D9C0093A404 /* Level1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FE8259D3D9C0093A404 /* Level1ViewController.swift */; };
+		D1FD9EB7259D90E600E06103 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD9EB6259D90E600E06103 /* Modal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		D19D1FD5259D35430093A404 /* ShabdakridaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShabdakridaUITests.swift; sourceTree = "<group>"; };
 		D19D1FD7259D35430093A404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D19D1FE8259D3D9C0093A404 /* Level1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level1ViewController.swift; sourceTree = "<group>"; };
+		D1FD9EB6259D90E600E06103 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			children = (
 				D19D1FB7259D35410093A404 /* ViewController.swift */,
 				D19D1FE8259D3D9C0093A404 /* Level1ViewController.swift */,
+				D1FD9EB6259D90E600E06103 /* Modal.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				D19D1FB8259D35410093A404 /* ViewController.swift in Sources */,
 				D19D1FE9259D3D9C0093A404 /* Level1ViewController.swift in Sources */,
 				D19D1FB4259D35410093A404 /* AppDelegate.swift in Sources */,
+				D1FD9EB7259D90E600E06103 /* Modal.swift in Sources */,
 				D11A6CA8259D7F1100B16A9D /* QuestionModel.swift in Sources */,
 				D11A6CAE259D820300B16A9D /* RiddleRepository.swift in Sources */,
 				D10B3871259D4BB600465BA6 /* ViewExtensions.swift in Sources */,
