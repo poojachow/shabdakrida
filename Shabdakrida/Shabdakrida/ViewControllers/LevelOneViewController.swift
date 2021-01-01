@@ -18,6 +18,7 @@ class LevelOneViewController: UIViewController {
     @IBOutlet weak var option4Button: UIButton!
     
     var question: QuestionModel?
+    var optionsMap: [String: Int] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,20 +56,32 @@ class LevelOneViewController: UIViewController {
         option4Button.setTitle("-", for: .normal)
         // reset image
         questionImageView.image = UIImage(named: "placeholder")
+        optionsMap.removeAll()
     }
     
     func set() {
         guard let question = question else {
             return
         }
-        option1Button.setTitle(question.options[0], for: .normal)
-        option2Button.setTitle(question.options[1], for: .normal)
-        option3Button.setTitle(question.options[2], for: .normal)
-        option4Button.setTitle(question.options[3], for: .normal)
         if let url = URL(string: question.imageUrl) {
             questionImageView.sd_setImage(with: url)
         }
         levelNameLabel.text = question.level
+        for (index, value) in question.options.enumerated() {
+            optionsMap[value] = index
+        }
+        // Randomize array
+        var randomOptions = Array(optionsMap.keys)
+        randomOptions.shuffled()
+        if randomOptions.count < 4 {
+            print("ERROR: Options list < 4")
+            return
+        }
+        // Set options
+        option1Button.setTitle(randomOptions[0], for: .normal)
+        option2Button.setTitle(randomOptions[1], for: .normal)
+        option3Button.setTitle(randomOptions[2], for: .normal)
+        option4Button.setTitle(randomOptions[3], for: .normal)
     }
 
 }
