@@ -31,12 +31,24 @@
                                     <segue destination="7F0-DO-q3u" kind="show" identifier="level1Segue" id="pLH-0P-Wxu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="संस्कृतम् शब्द क्रीडा" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqv-3R-XJy">
+                                <rect key="frame" x="107" y="44" width="200" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="dAL-bX-ekK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="49"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="AuI-7G-Axi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1BJ-do-eQW"/>
+                            <constraint firstItem="Fqv-3R-XJy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LWA-vc-rz7"/>
+                            <constraint firstItem="Fqv-3R-XJy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qja-dG-ka4"/>
                             <constraint firstItem="AuI-7G-Axi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g28-jN-Qfn"/>
+                            <constraint firstItem="AuI-7G-Axi" firstAttribute="top" secondItem="Fqv-3R-XJy" secondAttribute="bottom" id="y9m-wK-yul"/>
                         </constraints>
                     </view>
                     <connections>
