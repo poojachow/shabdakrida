@@ -164,11 +164,48 @@
                         <outlet property="option3Button" destination="Chl-Gt-3v7" id="xEC-dN-J6e"/>
                         <outlet property="option4Button" destination="7mk-Xg-Bq0" id="SMU-oD-SM3"/>
                         <outlet property="questionImageView" destination="yC7-b2-yHH" id="1v4-Y2-0DH"/>
+                        <segue destination="WuT-DD-3xC" kind="show" identifier="levelResultSegue" id="kAp-K4-7Gg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbU-sF-lUU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="762.31884057971024" y="71.651785714285708"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="IyS-t5-WyE">
+            <objects>
+                <viewController id="WuT-DD-3xC" customClass="ResultsViewController" customModule="Shabdakrida" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I7k-2X-T4r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFE-ra-pya">
+                                <rect key="frame" x="186" y="405" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ce-EQ-pd4">
+                                <rect key="frame" x="156" y="275" width="103" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j9x-Cl-ygA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ox1-Qc-jD1"/>
+                    <connections>
+                        <outlet property="resultDescriptionLabel" destination="0Ce-EQ-pd4" id="7Wi-y2-bU9"/>
+                        <outlet property="scoreLabel" destination="hFE-ra-pya" id="Boe-hI-bIz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hr0-e3-UTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1551" y="72"/>
         </scene>
     </scenes>
     <resources>

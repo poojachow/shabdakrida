@@ -35,7 +35,7 @@ class Level1ViewController: UIViewController {
     }
     
     @objc func nextQuestion() {
-        question = repository.getQuestion(isNext: true)
+//        question = repository.getQuestion(isNext: true)
         tableView.reloadData()
     }
 

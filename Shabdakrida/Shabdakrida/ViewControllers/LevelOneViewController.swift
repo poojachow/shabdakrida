@@ -19,6 +19,7 @@ class LevelOneViewController: UIViewController {
     
     var question: QuestionModel?
     var optionsMap: [String: Int] = [:]
+    var endOfLevel: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,6 +91,7 @@ class LevelOneViewController: UIViewController {
         option2Button.isEnabled = true
         option3Button.isEnabled = true
         option4Button.isEnabled = true
+        endOfLevel = false
     }
     
     func set() {
@@ -127,15 +129,21 @@ class LevelOneViewController: UIViewController {
     
     @objc func updateNextQuestion() {
         // Get next question
-        question = repository.getQuestion(isNext: true)
-        // Reset question
-        reset()
-        // Set question
-        set()
+        (question, endOfLevel) = repository.getQuestion(isNext: true)
+        if endOfLevel {
+            performSegue(withIdentifier: "levelResultSegue", sender: self)
+        }
+        else {
+            // Reset question
+            reset()
+            // Set question
+            set()
+        }
     }
     
     func isSelectedAnswerCorrect(option: String) -> Bool {
         if option == question?.answer {
+            repository.updateScore(correctAnswer: true)
             return true
         }
         else {
