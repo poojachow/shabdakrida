@@ -23,8 +23,8 @@
                                     <constraint firstAttribute="height" constant="88" id="D3R-Ad-3np"/>
                                     <constraint firstAttribute="width" constant="266" id="EyK-zI-JsW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="26"/>
-                                <state key="normal" title="अभ्यारम्भ">
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="26"/>
+                                <state key="normal" title="आरम्भ">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
@@ -55,28 +55,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6j-DK-uOf">
-                                <rect key="frame" x="0.0" y="113" width="414" height="616"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="XMw-eI-dGG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="798"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M28-KO-7O4">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="स्तर" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M28-KO-7O4">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="wzG-oT-nIi"/>
+                                            <constraint firstAttribute="height" constant="80" id="wzG-oT-nIi"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="26"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="yC7-b2-yHH">
-                                        <rect key="frame" x="30" y="100" width="354" height="210"/>
+                                        <rect key="frame" x="30" y="207" width="354" height="210"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="210" id="1vc-5I-gL6"/>
                                             <constraint firstAttribute="width" constant="354" id="yPc-EF-8o0"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="BMz-H6-oO9">
-                                        <rect key="frame" x="20" y="350" width="374" height="254"/>
+                                        <rect key="frame" x="20" y="544" width="374" height="254"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKj-YU-m8N">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
@@ -137,26 +137,23 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="BMz-H6-oO9" secondAttribute="bottom" constant="12" id="2vL-vD-1Ba"/>
-                                    <constraint firstAttribute="trailing" secondItem="BMz-H6-oO9" secondAttribute="trailing" constant="20" id="3e8-4K-S2g"/>
-                                    <constraint firstAttribute="trailing" secondItem="M28-KO-7O4" secondAttribute="trailing" id="Gvc-xe-EBf"/>
-                                    <constraint firstItem="M28-KO-7O4" firstAttribute="top" secondItem="U6j-DK-uOf" secondAttribute="top" id="RcM-Xk-0sx"/>
-                                    <constraint firstItem="BMz-H6-oO9" firstAttribute="leading" secondItem="U6j-DK-uOf" secondAttribute="leading" constant="20" id="cO5-LB-3Aw"/>
-                                    <constraint firstItem="M28-KO-7O4" firstAttribute="leading" secondItem="U6j-DK-uOf" secondAttribute="leading" id="cU4-FS-AaJ"/>
-                                    <constraint firstItem="yC7-b2-yHH" firstAttribute="centerX" secondItem="U6j-DK-uOf" secondAttribute="centerX" id="nah-4n-m0A"/>
-                                    <constraint firstItem="BMz-H6-oO9" firstAttribute="top" secondItem="yC7-b2-yHH" secondAttribute="bottom" constant="40" id="vLO-q2-nY2"/>
-                                    <constraint firstItem="yC7-b2-yHH" firstAttribute="top" secondItem="M28-KO-7O4" secondAttribute="bottom" constant="40" id="xKf-Jk-zhl"/>
+                                    <constraint firstAttribute="trailing" secondItem="BMz-H6-oO9" secondAttribute="trailing" constant="20" id="2V0-ig-3oL"/>
+                                    <constraint firstAttribute="trailing" secondItem="M28-KO-7O4" secondAttribute="trailing" id="2kZ-rX-dJS"/>
+                                    <constraint firstItem="BMz-H6-oO9" firstAttribute="leading" secondItem="XMw-eI-dGG" secondAttribute="leading" constant="20" id="GgO-kX-sWR"/>
+                                    <constraint firstItem="yC7-b2-yHH" firstAttribute="centerX" secondItem="XMw-eI-dGG" secondAttribute="centerX" id="JJh-fn-Chy"/>
+                                    <constraint firstItem="M28-KO-7O4" firstAttribute="top" secondItem="XMw-eI-dGG" secondAttribute="top" id="i5G-7X-dbM"/>
+                                    <constraint firstItem="M28-KO-7O4" firstAttribute="leading" secondItem="XMw-eI-dGG" secondAttribute="leading" id="kWR-Qm-chI"/>
                                 </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="75m-2i-HYl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="U6j-DK-uOf" firstAttribute="centerY" secondItem="6U5-cd-T62" secondAttribute="centerY" id="GUL-SD-dXe"/>
-                            <constraint firstItem="75m-2i-HYl" firstAttribute="trailing" secondItem="U6j-DK-uOf" secondAttribute="trailing" id="opA-xR-6Ph"/>
-                            <constraint firstItem="U6j-DK-uOf" firstAttribute="leading" secondItem="6U5-cd-T62" secondAttribute="leading" id="xbW-wY-KSP"/>
+                            <constraint firstItem="75m-2i-HYl" firstAttribute="bottom" secondItem="XMw-eI-dGG" secondAttribute="bottom" constant="10" id="74D-zr-unw"/>
+                            <constraint firstItem="XMw-eI-dGG" firstAttribute="leading" secondItem="75m-2i-HYl" secondAttribute="leading" id="MFp-kM-ayk"/>
+                            <constraint firstItem="XMw-eI-dGG" firstAttribute="top" secondItem="75m-2i-HYl" secondAttribute="top" id="aBe-t9-quf"/>
+                            <constraint firstItem="75m-2i-HYl" firstAttribute="trailing" secondItem="XMw-eI-dGG" secondAttribute="trailing" id="i3F-12-D89"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iNW-FL-7lY"/>
