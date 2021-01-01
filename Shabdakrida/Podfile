@@ -8,6 +8,7 @@ target 'Shabdakrida' do
   # Pods for Shabdakrida
   pod 'SDWebImage'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
   target 'ShabdakridaTests' do
     inherit! :search_paths
