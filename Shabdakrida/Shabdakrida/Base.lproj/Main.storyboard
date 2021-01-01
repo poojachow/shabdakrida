@@ -179,9 +179,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="परिणाम" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ce-EQ-pd4">
-                                <rect key="frame" x="144" y="391" width="126" height="60"/>
-                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="44"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medal" translatesAutoresizingMaskIntoConstraints="NO" id="4sM-Ju-fse">
+                                <rect key="frame" x="82" y="262.5" width="250" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="jX1-VC-MuM"/>
+                                    <constraint firstAttribute="height" constant="400" id="nij-od-Nyp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="१ / १" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFE-ra-pya">
+                                <rect key="frame" x="169" y="140" width="76" height="62.5"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="46"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -189,15 +196,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="tsr-wz-b9A"/>
+                                    <constraint firstAttribute="height" constant="80" id="rt6-yi-oGp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="परिणाम" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFE-ra-pya">
-                                <rect key="frame" x="176.5" y="475" width="61" height="30"/>
-                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="परिणाम" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ce-EQ-pd4">
+                                <rect key="frame" x="138" y="368.5" width="138" height="66"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -205,13 +212,15 @@
                         <viewLayoutGuide key="safeArea" id="j9x-Cl-ygA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hFE-ra-pya" firstAttribute="top" secondItem="0Ce-EQ-pd4" secondAttribute="bottom" constant="24" id="DgQ-H4-npv"/>
-                            <constraint firstItem="0Ce-EQ-pd4" firstAttribute="centerY" secondItem="I7k-2X-T4r" secondAttribute="centerY" id="Jiu-Gp-xHu"/>
-                            <constraint firstItem="j9x-Cl-ygA" firstAttribute="trailing" secondItem="PU0-ia-4oc" secondAttribute="trailing" id="PNA-5Q-xvi"/>
-                            <constraint firstItem="PU0-ia-4oc" firstAttribute="leading" secondItem="j9x-Cl-ygA" secondAttribute="leading" id="cPG-pQ-Rky"/>
-                            <constraint firstItem="0Ce-EQ-pd4" firstAttribute="centerX" secondItem="I7k-2X-T4r" secondAttribute="centerX" id="fRp-A3-LPv"/>
-                            <constraint firstItem="PU0-ia-4oc" firstAttribute="top" secondItem="j9x-Cl-ygA" secondAttribute="top" id="idR-SP-D2a"/>
-                            <constraint firstItem="hFE-ra-pya" firstAttribute="centerX" secondItem="I7k-2X-T4r" secondAttribute="centerX" id="liO-Xp-IfQ"/>
+                            <constraint firstItem="hFE-ra-pya" firstAttribute="centerX" secondItem="I7k-2X-T4r" secondAttribute="centerX" id="621-yl-YoJ"/>
+                            <constraint firstItem="4sM-Ju-fse" firstAttribute="top" secondItem="hFE-ra-pya" secondAttribute="bottom" constant="60" id="Mah-gf-NCl"/>
+                            <constraint firstItem="PU0-ia-4oc" firstAttribute="top" secondItem="j9x-Cl-ygA" secondAttribute="top" id="URJ-Qk-kpT"/>
+                            <constraint firstItem="PU0-ia-4oc" firstAttribute="leading" secondItem="j9x-Cl-ygA" secondAttribute="leading" id="Ukr-iN-4vq"/>
+                            <constraint firstItem="PU0-ia-4oc" firstAttribute="trailing" secondItem="j9x-Cl-ygA" secondAttribute="trailing" id="ZgE-05-9O3"/>
+                            <constraint firstItem="hFE-ra-pya" firstAttribute="top" secondItem="PU0-ia-4oc" secondAttribute="bottom" constant="60" id="f3p-iP-ge2"/>
+                            <constraint firstItem="0Ce-EQ-pd4" firstAttribute="top" secondItem="hFE-ra-pya" secondAttribute="bottom" constant="166" id="kwf-7F-eej"/>
+                            <constraint firstItem="0Ce-EQ-pd4" firstAttribute="centerX" secondItem="I7k-2X-T4r" secondAttribute="centerX" id="mqE-gS-2Oh"/>
+                            <constraint firstItem="4sM-Ju-fse" firstAttribute="centerX" secondItem="I7k-2X-T4r" secondAttribute="centerX" id="w5l-23-fUE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ox1-Qc-jD1"/>
@@ -222,10 +231,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hr0-e3-UTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1551" y="72"/>
+            <point key="canvasLocation" x="1550.7246376811595" y="71.651785714285708"/>
         </scene>
     </scenes>
     <resources>
+        <image name="medal" width="1079" height="1500"/>
         <image name="placeholder" width="450" height="248.5"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

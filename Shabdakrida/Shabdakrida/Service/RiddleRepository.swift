@@ -47,7 +47,9 @@ class RiddleRepository {
     }
     
     func getResultScore() -> String {
-        return "x / \(score)"
+        let numerator = NumberConverter.getTranslatedNumber(number: score)
+        let denominator = NumberConverter.getTranslatedNumber(number: questionsList.count)
+        return "\(numerator) / \(denominator)"
     }
     
     func getResultDescription() -> String {
