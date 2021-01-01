@@ -53,13 +53,13 @@ class RiddleRepository {
     func getResultDescription() -> String {
         let res = questionsList.count / 3
         if score <= res {
-            return "ok"
+            return "योग्यम्"
         }
         else if score <= res * 2 {
-            return "good"
+            return "समिचीनम्"
         }
         else {
-            return "excellent"
+            return "उत्तमम्"
         }
     }
     

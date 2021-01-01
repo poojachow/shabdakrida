@@ -179,23 +179,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFE-ra-pya">
-                                <rect key="frame" x="186" y="405" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="परिणाम" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ce-EQ-pd4">
+                                <rect key="frame" x="144" y="391" width="126" height="60"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ce-EQ-pd4">
-                                <rect key="frame" x="156" y="275" width="103" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="फलितांश" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU0-ia-4oc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="tsr-wz-b9A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="परिणाम" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFE-ra-pya">
+                                <rect key="frame" x="176.5" y="475" width="61" height="30"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j9x-Cl-ygA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hFE-ra-pya" firstAttribute="top" secondItem="0Ce-EQ-pd4" secondAttribute="bottom" constant="24" id="DgQ-H4-npv"/>
+                            <constraint firstItem="0Ce-EQ-pd4" firstAttribute="centerY" secondItem="I7k-2X-T4r" secondAttribute="centerY" id="Jiu-Gp-xHu"/>
+                            <constraint firstItem="j9x-Cl-ygA" firstAttribute="trailing" secondItem="PU0-ia-4oc" secondAttribute="trailing" id="PNA-5Q-xvi"/>
+                            <constraint firstItem="PU0-ia-4oc" firstAttribute="leading" secondItem="j9x-Cl-ygA" secondAttribute="leading" id="cPG-pQ-Rky"/>
+                            <constraint firstItem="0Ce-EQ-pd4" firstAttribute="centerX" secondItem="I7k-2X-T4r" secondAttribute="centerX" id="fRp-A3-LPv"/>
+                            <constraint firstItem="PU0-ia-4oc" firstAttribute="top" secondItem="j9x-Cl-ygA" secondAttribute="top" id="idR-SP-D2a"/>
+                            <constraint firstItem="hFE-ra-pya" firstAttribute="centerX" secondItem="I7k-2X-T4r" secondAttribute="centerX" id="liO-Xp-IfQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ox1-Qc-jD1"/>
                     <connections>
