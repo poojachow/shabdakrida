@@ -41,12 +41,12 @@ class RiddleRepository {
     private func setupLevel1() {
         ref.child("level1").observeSingleEvent(of: .value) { [weak self] (snapshot) in
             if let data = snapshot.value as? [String: Any] {
-                if let questions = data["questions"] as? [Any] {
+                if let questions = data["questions"] as? [Any], let level = data["level"] as? String {
                     for question in questions {
                         if let question = question as? [String: Any] {
                             if let answer = question["answer"] as? String, let image = question["image"] as? String, let options = question["options"] as? [String] {
                                 
-                                let questionModel = QuestionModel(imageUrl: image, options: options, answer: answer)
+                                let questionModel = QuestionModel(imageUrl: image, options: options, answer: answer, level: level)
                                 self?.questionsList.append(questionModel)
                             }
                         }

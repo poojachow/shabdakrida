@@ -68,6 +68,7 @@ class LevelOneViewController: UIViewController {
         if let url = URL(string: question.imageUrl) {
             questionImageView.sd_setImage(with: url)
         }
+        levelNameLabel.text = question.level
     }
 
 }
