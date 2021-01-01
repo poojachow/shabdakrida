@@ -17,9 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuI-7G-Axi">
-                                <rect key="frame" x="129" y="422" width="113" height="30"/>
+                                <rect key="frame" x="74" y="404" width="266" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Let's get started"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="26"/>
+                                <state key="normal" title="अभ्यारम्भ">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="startClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="81f-bz-6fK"/>
                                 </connections>
@@ -28,15 +32,138 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="startButton" destination="AuI-7G-Axi" id="rDa-T9-otp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-26" y="72"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="71.651785714285708"/>
+        </scene>
+        <!--Level One View Controller-->
+        <scene sceneID="Gbz-pd-4Cc">
+            <objects>
+                <viewController id="7F0-DO-q3u" customClass="LevelOneViewController" customModule="Shabdakrida" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6U5-cd-T62">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yC7-b2-yHH">
+                                <rect key="frame" x="30" y="156.5" width="354" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="1vc-5I-gL6"/>
+                                    <constraint firstAttribute="width" constant="354" id="yPc-EF-8o0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M28-KO-7O4">
+                                <rect key="frame" x="178" y="84" width="58.5" height="32.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="BMz-H6-oO9">
+                                <rect key="frame" x="20" y="406.5" width="374" height="254"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKj-YU-m8N">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="YJC-iv-JcG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="22"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="option1Clicked:" destination="7F0-DO-q3u" eventType="touchUpInside" id="t5n-rG-c2z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gB0-Bn-kOZ">
+                                        <rect key="frame" x="0.0" y="68" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wxV-Gy-rVa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="22"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="option2Clicked:" destination="7F0-DO-q3u" eventType="touchUpInside" id="2Yk-qn-sYy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chl-Gt-3v7">
+                                        <rect key="frame" x="0.0" y="136" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jFy-sq-4Lk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="22"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="option3Clicked:" destination="7F0-DO-q3u" eventType="touchUpInside" id="0sX-Y1-at8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mk-Xg-Bq0">
+                                        <rect key="frame" x="0.0" y="204" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="9WV-mO-G1B"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="22"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="option4Clicked:" destination="7F0-DO-q3u" eventType="touchUpInside" id="6gn-AN-Cje"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="75m-2i-HYl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="75m-2i-HYl" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M28-KO-7O4" secondAttribute="trailing" constant="20" id="Akf-Sm-U8v"/>
+                            <constraint firstItem="75m-2i-HYl" firstAttribute="trailing" secondItem="BMz-H6-oO9" secondAttribute="trailing" constant="20" id="M8w-kz-FeI"/>
+                            <constraint firstItem="M28-KO-7O4" firstAttribute="centerX" secondItem="6U5-cd-T62" secondAttribute="centerX" id="NEx-oE-hrV"/>
+                            <constraint firstItem="BMz-H6-oO9" firstAttribute="leading" secondItem="75m-2i-HYl" secondAttribute="leading" constant="20" id="PfG-sC-drM"/>
+                            <constraint firstItem="yC7-b2-yHH" firstAttribute="centerX" secondItem="6U5-cd-T62" secondAttribute="centerX" id="Q2l-gq-dX4"/>
+                            <constraint firstItem="M28-KO-7O4" firstAttribute="top" secondItem="75m-2i-HYl" secondAttribute="top" constant="40" id="awV-Au-IZT"/>
+                            <constraint firstItem="yC7-b2-yHH" firstAttribute="top" secondItem="M28-KO-7O4" secondAttribute="bottom" constant="40" id="bCY-Bj-QDz"/>
+                            <constraint firstItem="M28-KO-7O4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="75m-2i-HYl" secondAttribute="leading" constant="20" id="gQm-Xt-IPP"/>
+                            <constraint firstItem="BMz-H6-oO9" firstAttribute="top" secondItem="yC7-b2-yHH" secondAttribute="bottom" constant="40" id="loI-re-GjH"/>
+                            <constraint firstItem="BMz-H6-oO9" firstAttribute="centerX" secondItem="6U5-cd-T62" secondAttribute="centerX" id="qD6-UP-ew6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="levelNameLabel" destination="M28-KO-7O4" id="jLq-Ol-0sn"/>
+                        <outlet property="option1Button" destination="aKj-YU-m8N" id="LQL-uW-yfc"/>
+                        <outlet property="option2Button" destination="gB0-Bn-kOZ" id="gvM-Dn-bDm"/>
+                        <outlet property="option3Button" destination="Chl-Gt-3v7" id="xEC-dN-J6e"/>
+                        <outlet property="option4Button" destination="7mk-Xg-Bq0" id="SMU-oD-SM3"/>
+                        <outlet property="questionImageView" destination="yC7-b2-yHH" id="1v4-Y2-0DH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TbU-sF-lUU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="762.31884057971024" y="71.651785714285708"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -23,6 +23,7 @@
 		D19D1FD6259D35430093A404 /* ShabdakridaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FD5259D35430093A404 /* ShabdakridaUITests.swift */; };
 		D19D1FE9259D3D9C0093A404 /* Level1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D1FE8259D3D9C0093A404 /* Level1ViewController.swift */; };
 		D1D7E154259E5FBB00F181FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1D7E153259E5FBB00F181FA /* GoogleService-Info.plist */; };
+		D1D7E1B2259ECA5E00F181FA /* LevelOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D7E1B1259ECA5E00F181FA /* LevelOneViewController.swift */; };
 		D1FD9EB7259D90E600E06103 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD9EB6259D90E600E06103 /* Modal.swift */; };
 		D1FD9EBD259D91AE00E06103 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD9EBC259D91AE00E06103 /* CustomAlertView.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		D19D1FD7259D35430093A404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D19D1FE8259D3D9C0093A404 /* Level1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level1ViewController.swift; sourceTree = "<group>"; };
 		D1D7E153259E5FBB00F181FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1D7E1B1259ECA5E00F181FA /* LevelOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelOneViewController.swift; sourceTree = "<group>"; };
 		D1FD9EB6259D90E600E06103 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 		D1FD9EBC259D91AE00E06103 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +219,7 @@
 				D19D1FB7259D35410093A404 /* ViewController.swift */,
 				D19D1FE8259D3D9C0093A404 /* Level1ViewController.swift */,
 				D1FD9EB6259D90E600E06103 /* Modal.swift */,
+				D1D7E1B1259ECA5E00F181FA /* LevelOneViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				D1FD9EBD259D91AE00E06103 /* CustomAlertView.swift in Sources */,
 				D1FD9EB7259D90E600E06103 /* Modal.swift in Sources */,
 				D11A6CA8259D7F1100B16A9D /* QuestionModel.swift in Sources */,
+				D1D7E1B2259ECA5E00F181FA /* LevelOneViewController.swift in Sources */,
 				D11A6CAE259D820300B16A9D /* RiddleRepository.swift in Sources */,
 				D10B3871259D4BB600465BA6 /* ViewExtensions.swift in Sources */,
 				D19D1FB6259D35410093A404 /* SceneDelegate.swift in Sources */,
