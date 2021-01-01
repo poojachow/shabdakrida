@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         if segue.identifier == "level1Segue" {
             if let vc = segue.destination as? LevelOneViewController {
                 vc.modalPresentationStyle = .fullScreen
+                vc.question = repository.getQuestion(isNext: false)
             }
         }
     }
