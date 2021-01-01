@@ -41,12 +41,8 @@ class RiddleRepository {
     private func setupLevel1() {
         ref.child("level1").observeSingleEvent(of: .value) { [weak self] (snapshot) in
             if let data = snapshot.value as? [String: Any] {
-                print("######")
-                print(data["level"])
-                print(data["questions"])
                 if let questions = data["questions"] as? [Any] {
                     for question in questions {
-                        print("######")
                         if let question = question as? [String: Any] {
                             if let answer = question["answer"] as? String, let image = question["image"] as? String, let options = question["options"] as? [String] {
                                 
