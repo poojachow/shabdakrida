@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class LevelOneViewController: UIViewController {
 
@@ -64,6 +65,9 @@ class LevelOneViewController: UIViewController {
         option2Button.setTitle(question.options[1], for: .normal)
         option3Button.setTitle(question.options[2], for: .normal)
         option4Button.setTitle(question.options[3], for: .normal)
+        if let url = URL(string: question.imageUrl) {
+            questionImageView.sd_setImage(with: url)
+        }
     }
 
 }
