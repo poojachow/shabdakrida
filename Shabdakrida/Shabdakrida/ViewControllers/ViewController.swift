@@ -9,18 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBAction func startClicked(_ sender: UIButton) {
-        let vc = Level1ViewController()
-        vc.modalPresentationStyle = .fullScreen
-        vc.question = repository.getQuestion(isNext: false)
-        present(vc, animated: true, completion: nil)
-    }
+    @IBOutlet weak var startButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        startButton.layer.cornerRadius = startButton.frame.height / 2
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "level1Segue" {
+            if let vc = segue.destination as? LevelOneViewController {
+                vc.modalPresentationStyle = .fullScreen
+            }
+        }
+    }
 
 }
 
