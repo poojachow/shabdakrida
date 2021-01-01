@@ -18,8 +18,11 @@ class LevelOneViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        option1Button.layer.cornerRadius = option1Button.frame.size.height / 2
+        option2Button.layer.cornerRadius = option2Button.frame.size.height / 2
+        option3Button.layer.cornerRadius = option3Button.frame.size.height / 2
+        option4Button.layer.cornerRadius = option4Button.frame.size.height / 2
     }
     
     @IBAction func option1Clicked(_ sender: UIButton) {
