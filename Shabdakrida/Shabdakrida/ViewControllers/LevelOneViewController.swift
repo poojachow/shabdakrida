@@ -32,15 +32,39 @@ class LevelOneViewController: UIViewController {
     }
     
     @IBAction func option1Clicked(_ sender: UIButton) {
+        if isSelectedAnswerCorrect(option: option1Button.currentTitle ?? "") {
+            option1Button.backgroundColor = .systemGreen
+        }
+        else {
+            option1Button.backgroundColor = .systemRed
+        }
     }
     
     @IBAction func option2Clicked(_ sender: UIButton) {
+        if isSelectedAnswerCorrect(option: option2Button.currentTitle ?? "") {
+            option2Button.backgroundColor = .systemGreen
+        }
+        else {
+            option2Button.backgroundColor = .systemRed
+        }
     }
     
     @IBAction func option3Clicked(_ sender: UIButton) {
+        if isSelectedAnswerCorrect(option: option3Button.currentTitle ?? "") {
+            option3Button.backgroundColor = .systemGreen
+        }
+        else {
+            option3Button.backgroundColor = .systemRed
+        }
     }
     
     @IBAction func option4Clicked(_ sender: UIButton) {
+        if isSelectedAnswerCorrect(option: option4Button.currentTitle ?? "") {
+            option4Button.backgroundColor = .systemGreen
+        }
+        else {
+            option4Button.backgroundColor = .systemRed
+        }
     }
     
     func reset() {
@@ -67,12 +91,11 @@ class LevelOneViewController: UIViewController {
             questionImageView.sd_setImage(with: url)
         }
         levelNameLabel.text = question.level
-        for (index, value) in question.options.enumerated() {
+        // Randomize array
+        let randomOptions = question.options.shuffled()
+        for (index, value) in randomOptions.enumerated() {
             optionsMap[value] = index
         }
-        // Randomize array
-        var randomOptions = Array(optionsMap.keys)
-        randomOptions.shuffled()
         if randomOptions.count < 4 {
             print("ERROR: Options list < 4")
             return
@@ -82,6 +105,33 @@ class LevelOneViewController: UIViewController {
         option2Button.setTitle(randomOptions[1], for: .normal)
         option3Button.setTitle(randomOptions[2], for: .normal)
         option4Button.setTitle(randomOptions[3], for: .normal)
+    }
+    
+    func isSelectedAnswerCorrect(option: String) -> Bool {
+        if option == question?.answer {
+            return true
+        }
+        else {
+            if let index = optionsMap[question?.answer ?? ""] {
+                getOptionButton(index: index).backgroundColor = .systemGreen
+            }
+            return false
+        }
+    }
+    
+    func getOptionButton(index: Int) -> UIButton {
+        switch index {
+        case 0:
+            return option1Button
+        case 1:
+            return option2Button
+        case 2:
+            return option3Button
+        case 3:
+            return option4Button
+        default:
+            return option1Button
+        }
     }
 
 }
