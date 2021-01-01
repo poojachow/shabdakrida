@@ -57,7 +57,7 @@ class RiddleRepository {
         if score <= result {
             return "योग्यम्"
         }
-        else if score <= res * 2 {
+        else if score <= result * 2 {
             return "समिचीनम्"
         }
         else {
