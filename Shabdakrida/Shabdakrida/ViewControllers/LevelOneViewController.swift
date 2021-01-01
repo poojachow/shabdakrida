@@ -38,6 +38,7 @@ class LevelOneViewController: UIViewController {
         else {
             option1Button.backgroundColor = .systemRed
         }
+        optionSelected()
     }
     
     @IBAction func option2Clicked(_ sender: UIButton) {
@@ -47,6 +48,7 @@ class LevelOneViewController: UIViewController {
         else {
             option2Button.backgroundColor = .systemRed
         }
+        optionSelected()
     }
     
     @IBAction func option3Clicked(_ sender: UIButton) {
@@ -56,6 +58,7 @@ class LevelOneViewController: UIViewController {
         else {
             option3Button.backgroundColor = .systemRed
         }
+        optionSelected()
     }
     
     @IBAction func option4Clicked(_ sender: UIButton) {
@@ -65,22 +68,28 @@ class LevelOneViewController: UIViewController {
         else {
             option4Button.backgroundColor = .systemRed
         }
+        optionSelected()
     }
     
     func reset() {
-        // reset option background color
+        // Reset option background color
         option1Button.backgroundColor = .systemGray5
         option2Button.backgroundColor = .systemGray5
         option3Button.backgroundColor = .systemGray5
         option4Button.backgroundColor = .systemGray5
-        // reset option text
+        // Reset option text
         option1Button.setTitle("-", for: .normal)
         option2Button.setTitle("-", for: .normal)
         option3Button.setTitle("-", for: .normal)
         option4Button.setTitle("-", for: .normal)
-        // reset image
+        // Reset image
         questionImageView.image = UIImage(named: "placeholder")
         optionsMap.removeAll()
+        // Enable all option buttons
+        option1Button.isEnabled = true
+        option2Button.isEnabled = true
+        option3Button.isEnabled = true
+        option4Button.isEnabled = true
     }
     
     func set() {
@@ -105,6 +114,24 @@ class LevelOneViewController: UIViewController {
         option2Button.setTitle(randomOptions[1], for: .normal)
         option3Button.setTitle(randomOptions[2], for: .normal)
         option4Button.setTitle(randomOptions[3], for: .normal)
+    }
+    
+    func optionSelected() {
+        // Disable all option buttons
+        option1Button.isEnabled = false
+        option2Button.isEnabled = false
+        option3Button.isEnabled = false
+        option4Button.isEnabled = false
+        perform(#selector(updateNextQuestion), with: nil, afterDelay: 1.5)
+    }
+    
+    @objc func updateNextQuestion() {
+        // Get next question
+        question = repository.getQuestion(isNext: true)
+        // Reset question
+        reset()
+        // Set question
+        set()
     }
     
     func isSelectedAnswerCorrect(option: String) -> Bool {
