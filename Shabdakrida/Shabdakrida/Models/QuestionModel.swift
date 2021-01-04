@@ -7,11 +7,6 @@
 
 import Foundation
 
-enum Level: Int {
-    case level1 = 1
-    case level2 = 2
-}
-
 class QuestionModel {
     let imageUrl: String
     let options: [String]
@@ -23,5 +18,15 @@ class QuestionModel {
         self.options = options
         self.answer = answer
         self.level = level
+    }
+}
+
+class LevelModel {
+    let questionsList: [QuestionModel]
+    let levelName: String
+    
+    init(name: String, list: [QuestionModel]) {
+        self.levelName = name
+        self.questionsList = list
     }
 }

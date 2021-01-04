@@ -12,6 +12,7 @@ var repository: RiddleRepository!
 
 class RiddleRepository {
     
+    var levelsList = [LevelModel]()
     var questionsList = [QuestionModel]()
     var currentQuestionIndex: Int = 0
     var currentLevelIndex: Int = 0
@@ -21,6 +22,7 @@ class RiddleRepository {
     init() {
         ref = Database.database().reference()
         questionsList.removeAll()
+        levelsList.removeAll()
         currentQuestionIndex = 0
         currentLevelIndex = 0
         setupLevels()
@@ -74,17 +76,23 @@ class RiddleRepository {
                 for index in 1...data.count {
                     if let levelData = data["level\(index)"] as? [String: Any] {
                         if let type = levelData["type"] as? String, type == "mcq" {
+                            var levelName = ""
+                            var list = [QuestionModel]()
                             if let questions = levelData["questions"] as? [Any], let level = levelData["level"] as? String {
+                                levelName = level
                                 for question in questions {
                                     if let question = question as? [String: Any] {
                                         if let answer = question["answer"] as? String, let image = question["image"] as? String, let options = question["options"] as? [String] {
 
-                                            let questionModel = QuestionModel(imageUrl: image, options: options, answer: answer, level: level)
-                                            self?.questionsList.append(questionModel)
+                                            let questionObj = QuestionModel(imageUrl: image, options: options, answer: answer, level: level)
+                                            list.append(questionObj)
+                                            self?.questionsList.append(questionObj)
                                         }
                                     }
                                 }
                             }
+                            let levelObj = LevelModel(name: levelName, list: list)
+                            self?.levelsList.append(levelObj)
                         }
                     }
                 }
