@@ -17,6 +17,7 @@ class RiddleRepository {
     var currentLevelsArrayIndex: Int = 0
     var ref: DatabaseReference
     var score: Int = 0
+    var totalScore: Int = 0
     
     init() {
         ref = Database.database().reference()
@@ -45,6 +46,7 @@ class RiddleRepository {
     func updateScore(correctAnswer: Bool) {
         if correctAnswer {
             score += 1
+            totalScore += 1
         }
     }
     
@@ -68,7 +70,6 @@ class RiddleRepository {
     }
     
     private func setupLevels() {
-        
         ref.observeSingleEvent(of: .value) { [weak self] (snapshot) in
             if let data = snapshot.value as? [String: Any] {
                 for index in 1...data.count {
@@ -107,6 +108,20 @@ class RiddleRepository {
             return levelsList[currentLevelsArrayIndex].questionsList[index]
         }
         return nil
+    }
+    
+    func getNextLevel() -> Bool {
+        if currentLevelsArrayIndex < levelsList.count - 1 {
+            // Next level exists
+            // Update current level index
+            currentLevelsArrayIndex += 1
+            // Reset current qeustion index
+            currentQuestionIndex = 0
+            // Reset score
+            score = 0
+            return true
+        }
+        return false
     }
     
 }

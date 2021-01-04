@@ -233,6 +233,7 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButtonClicked:" destination="WuT-DD-3xC" eventType="touchUpInside" id="Rok-3V-bOA"/>
+                                    <segue destination="7F0-DO-q3u" kind="show" identifier="nextLevelSegue" id="Vh0-yO-NCK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -261,9 +262,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hr0-e3-UTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1550.7246376811595" y="71.651785714285708"/>
+            <point key="canvasLocation" x="1919" y="72"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Vh0-yO-NCK"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="medal" width="1079" height="1500"/>
         <image name="placeholder" width="450" height="248.5"/>
