@@ -14,6 +14,7 @@ class RiddleRepository {
     
     var questionsList = [QuestionModel]()
     var currentQuestionIndex: Int = 0
+    var currentLevelIndex: Int = 0
     var ref: DatabaseReference
     var score: Int = 0
     
@@ -21,7 +22,8 @@ class RiddleRepository {
         ref = Database.database().reference()
         questionsList.removeAll()
         currentQuestionIndex = 0
-        setupLevel1()
+        currentLevelIndex = 0
+        setupLevels()
     }
     
     // Bool in tuple indicates if this is end of level
@@ -65,16 +67,23 @@ class RiddleRepository {
         }
     }
     
-    private func setupLevel1() {
-        ref.child("level1").observeSingleEvent(of: .value) { [weak self] (snapshot) in
+    private func setupLevels() {
+        
+        ref.observeSingleEvent(of: .value) { [weak self] (snapshot) in
             if let data = snapshot.value as? [String: Any] {
-                if let questions = data["questions"] as? [Any], let level = data["level"] as? String {
-                    for question in questions {
-                        if let question = question as? [String: Any] {
-                            if let answer = question["answer"] as? String, let image = question["image"] as? String, let options = question["options"] as? [String] {
-                                
-                                let questionModel = QuestionModel(imageUrl: image, options: options, answer: answer, level: level)
-                                self?.questionsList.append(questionModel)
+                for index in 1...data.count {
+                    if let levelData = data["level\(index)"] as? [String: Any] {
+                        if let type = levelData["type"] as? String, type == "mcq" {
+                            if let questions = levelData["questions"] as? [Any], let level = levelData["level"] as? String {
+                                for question in questions {
+                                    if let question = question as? [String: Any] {
+                                        if let answer = question["answer"] as? String, let image = question["image"] as? String, let options = question["options"] as? [String] {
+
+                                            let questionModel = QuestionModel(imageUrl: image, options: options, answer: answer, level: level)
+                                            self?.questionsList.append(questionModel)
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

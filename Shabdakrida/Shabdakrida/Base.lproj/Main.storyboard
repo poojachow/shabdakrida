@@ -192,10 +192,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medal" translatesAutoresizingMaskIntoConstraints="NO" id="4sM-Ju-fse">
-                                <rect key="frame" x="82" y="262.5" width="250" height="400"/>
+                                <rect key="frame" x="107" y="262.5" width="200" height="350"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="jX1-VC-MuM"/>
-                                    <constraint firstAttribute="height" constant="400" id="nij-od-Nyp"/>
+                                    <constraint firstAttribute="width" constant="200" id="jX1-VC-MuM"/>
+                                    <constraint firstAttribute="height" constant="350" id="nij-od-Nyp"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="१ / १" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFE-ra-pya">
@@ -215,28 +215,46 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="परिणाम" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ce-EQ-pd4">
-                                <rect key="frame" x="138" y="368.5" width="138" height="66"/>
-                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="48"/>
+                                <rect key="frame" x="151" y="366.5" width="112" height="53"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Piy-5Q-BV0">
+                                <rect key="frame" x="74" y="642.5" width="266" height="88"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="kcU-Zx-F75"/>
+                                    <constraint firstAttribute="height" constant="88" id="zj1-ho-oXD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="26"/>
+                                <state key="normal" title="आगामि स्तर">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonClicked:" destination="WuT-DD-3xC" eventType="touchUpInside" id="Rok-3V-bOA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j9x-Cl-ygA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hFE-ra-pya" firstAttribute="centerX" secondItem="I7k-2X-T4r" secondAttribute="centerX" id="621-yl-YoJ"/>
+                            <constraint firstItem="Piy-5Q-BV0" firstAttribute="top" secondItem="4sM-Ju-fse" secondAttribute="bottom" constant="30" id="7tN-jd-vqe"/>
+                            <constraint firstItem="Piy-5Q-BV0" firstAttribute="centerX" secondItem="I7k-2X-T4r" secondAttribute="centerX" id="JV6-6X-44f"/>
                             <constraint firstItem="4sM-Ju-fse" firstAttribute="top" secondItem="hFE-ra-pya" secondAttribute="bottom" constant="60" id="Mah-gf-NCl"/>
                             <constraint firstItem="PU0-ia-4oc" firstAttribute="top" secondItem="j9x-Cl-ygA" secondAttribute="top" id="URJ-Qk-kpT"/>
                             <constraint firstItem="PU0-ia-4oc" firstAttribute="leading" secondItem="j9x-Cl-ygA" secondAttribute="leading" id="Ukr-iN-4vq"/>
                             <constraint firstItem="PU0-ia-4oc" firstAttribute="trailing" secondItem="j9x-Cl-ygA" secondAttribute="trailing" id="ZgE-05-9O3"/>
                             <constraint firstItem="hFE-ra-pya" firstAttribute="top" secondItem="PU0-ia-4oc" secondAttribute="bottom" constant="60" id="f3p-iP-ge2"/>
-                            <constraint firstItem="0Ce-EQ-pd4" firstAttribute="top" secondItem="hFE-ra-pya" secondAttribute="bottom" constant="166" id="kwf-7F-eej"/>
+                            <constraint firstItem="0Ce-EQ-pd4" firstAttribute="top" secondItem="hFE-ra-pya" secondAttribute="bottom" constant="164" id="kwf-7F-eej"/>
                             <constraint firstItem="0Ce-EQ-pd4" firstAttribute="centerX" secondItem="I7k-2X-T4r" secondAttribute="centerX" id="mqE-gS-2Oh"/>
                             <constraint firstItem="4sM-Ju-fse" firstAttribute="centerX" secondItem="I7k-2X-T4r" secondAttribute="centerX" id="w5l-23-fUE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ox1-Qc-jD1"/>
                     <connections>
+                        <outlet property="nextButton" destination="Piy-5Q-BV0" id="vd5-CH-xAZ"/>
                         <outlet property="resultDescriptionLabel" destination="0Ce-EQ-pd4" id="7Wi-y2-bU9"/>
                         <outlet property="scoreLabel" destination="hFE-ra-pya" id="Boe-hI-bIz"/>
                     </connections>
