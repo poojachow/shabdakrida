@@ -24,8 +24,10 @@ class QuestionModel {
 class LevelModel {
     let questionsList: [QuestionModel]
     let levelName: String
+    let index: Int
     
-    init(name: String, list: [QuestionModel]) {
+    init(index: Int, name: String, list: [QuestionModel]) {
+        self.index = index
         self.levelName = name
         self.questionsList = list
     }

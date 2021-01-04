@@ -13,18 +13,16 @@ var repository: RiddleRepository!
 class RiddleRepository {
     
     var levelsList = [LevelModel]()
-    var questionsList = [QuestionModel]()
     var currentQuestionIndex: Int = 0
-    var currentLevelIndex: Int = 0
+    var currentLevelsArrayIndex: Int = 0
     var ref: DatabaseReference
     var score: Int = 0
     
     init() {
         ref = Database.database().reference()
-        questionsList.removeAll()
         levelsList.removeAll()
         currentQuestionIndex = 0
-        currentLevelIndex = 0
+        currentLevelsArrayIndex = 0
         setupLevels()
     }
     
@@ -33,7 +31,7 @@ class RiddleRepository {
         if isNext {
             // Check if next is within range
             let nextIndex = currentQuestionIndex + 1
-            if nextIndex >= 0 && nextIndex < questionsList.count {
+            if nextIndex >= 0 && nextIndex < levelsList[currentLevelsArrayIndex].questionsList.count {
                 currentQuestionIndex = nextIndex
             }
             else {
@@ -52,12 +50,12 @@ class RiddleRepository {
     
     func getResultScore() -> String {
         let numerator = NumberConverter.getTranslatedNumber(number: score)
-        let denominator = NumberConverter.getTranslatedNumber(number: questionsList.count)
+        let denominator = NumberConverter.getTranslatedNumber(number: levelsList[currentLevelsArrayIndex].questionsList.count)
         return "\(numerator) / \(denominator)"
     }
     
     func getResultDescription() -> String {
-        let result = questionsList.count / 3
+        let result = levelsList[currentLevelsArrayIndex].questionsList.count / 3
         if score <= result {
             return "योग्यम्"
         }
@@ -86,13 +84,15 @@ class RiddleRepository {
 
                                             let questionObj = QuestionModel(imageUrl: image, options: options, answer: answer, level: level)
                                             list.append(questionObj)
-                                            self?.questionsList.append(questionObj)
                                         }
                                     }
                                 }
                             }
-                            let levelObj = LevelModel(name: levelName, list: list)
+                            let levelObj = LevelModel(index: index, name: levelName, list: list)
                             self?.levelsList.append(levelObj)
+                            if index == 1 {
+                                self?.currentLevelsArrayIndex = 0
+                            }
                         }
                     }
                 }
@@ -103,8 +103,8 @@ class RiddleRepository {
     }
     
     private func getQuestionFor(index: Int) -> QuestionModel? {
-        if index >= 0 && index < questionsList.count {
-            return questionsList[index]
+        if index >= 0 && index < levelsList[currentLevelsArrayIndex].questionsList.count {
+            return levelsList[currentLevelsArrayIndex].questionsList[index]
         }
         return nil
     }
